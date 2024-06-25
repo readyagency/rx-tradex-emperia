@@ -128,3 +128,9 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+yarn.lock
+src/databases/qr.json
+src/databases/rcm.json
+src/csvs
+src/logs

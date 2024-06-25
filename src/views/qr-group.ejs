@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="icon"
+            type="image/x-icon"
+            href="https://rx-vietnamshows.com/favico.ico"
+        />
+        <title>RX Tradex Vietnam</title>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-size: 16px;
+            }
+
+            .container {
+                min-height: 100vh;
+                display: flex;
+                justify-content: center;
+            }
+
+            .box {
+                max-width: 100%;
+                padding: 0px;
+                box-sizing: border-box;
+            }
+
+            .customer-name {
+                text-align: center;
+            }
+
+            .customer-name h2 {
+                margin-top: 80px;
+                font-size: 2rem;
+            }
+
+            h4 {
+                font-size: 1.25rem;
+            }
+
+            .qr-code {
+                text-align: center;
+            }
+
+            .instruction {
+                margin-top: 20px;
+                text-align: center;
+            }
+
+            .instruction h6 {
+                font-style: italic;
+            }
+
+            @media (min-width: 768px) {
+                .box {
+                    max-width: 700px;
+                    margin: 0 auto;
+                }
+            }
+
+            @media (max-width: 600px) {
+                .box {
+                    padding: 0px;
+                    margin: 0px;
+                }
+
+                .customer-name h2 {
+                    font-size: 1.5rem;
+                }
+
+                h4 {
+                    font-size: 1rem;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="box">
+                <div class="image-header">
+                    <img
+                        alt=""
+                        src="https://w.ladicdn.com/s250x250/60a651b7c4ec0f001367452b/header-nepcon-20230814074834-ww-up.jpg"
+                        width="100%"
+                    />
+                </div>
+
+                <div class="customer-name">
+                    <h2><%=fullName%></h2>
+                    <h4><%=companyName%></h4>
+                </div>
+
+                <div class="qr-code">
+                    <img
+                        src="https://chart.googleapis.com/chart?cht=qr&chs=300x300&chl=<%=content%>&style=197&type=C128B&width=271&height=50&xres=1&font=3"
+                    />
+                </div>
+
+                <div class="instruction">
+                    <h4>YOU ARE REGISTERING AS GROUP</h4>
+                    <h4>BẠN ĐANG ĐĂNG KÝ CHO ĐOÀN</h4>
+                    <h6>
+                        Please us this code for badge print at the Business
+                        Delegation Counter!
+                    </h6>
+                    <h6>
+                        Vui lòng sử dụng mã này tại quầy đăng ký dành cho doanh
+                        nghiệp để in thẻ định danh
+                    </h6>
+                </div>
+
+                <div class="image-footer">
+                    <img
+                        alt=""
+                        src="https://w.ladicdn.com/s250x250/60a651b7c4ec0f001367452b/footer-nepcon-background-20230818070943-1-qyx.jpg"
+                        width="100%"
+                    />
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

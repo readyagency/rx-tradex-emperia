@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="icon"
+            type="image/x-icon"
+            href="https://rx-vietnamshows.com/favico.ico"
+        />
+        <title>RX Tradex</title>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            .container {
+                display: flex;
+                justify-content: center;
+            }
+
+            .box {
+                max-width: 750px;
+                width: 100%;
+                margin: 0px;
+                padding: 0px;
+                box-sizing: border-box;
+            }
+
+            @media (max-width: 600px) {
+                .box {
+                    margin: 0px;
+                    padding: 0px;
+                }
+
+                table {
+                    width: 100%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="box"><%-content%></div>
+        </div>
+    </body>
+</html>
